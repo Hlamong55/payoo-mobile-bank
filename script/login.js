@@ -12,7 +12,7 @@ document.getElementById("login-btn").addEventListener("click", function () {
   console.log(pin);
 
   //3 match pin & mobile number
-  if (contactNumber == "01234567890" && pin == "123456") {
+  if (contactNumber == "01234567890" && pin == "1234") {
     // true:::>> alert> homepage
     alert("Login Success");
 

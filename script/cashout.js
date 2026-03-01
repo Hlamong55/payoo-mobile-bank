@@ -1,11 +1,11 @@
 document.getElementById("cashout-btn").addEventListener("click", function () {
-  //1- get the agent number & validate
+  //1 get the agent number & validate
   const cashoutNumber = getValueFromInput("cashout-number");
   if (cashoutNumber.length != 11) {
-    alert("invalid number");
+    alert("Invalid Number");
     return;
   }
-  //2- get the amount
+  //2 get the amount
   const cashoutAmount = getValueFromInput("cashout-amount");
 
   const currentBalance = getBalance();
