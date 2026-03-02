@@ -5,12 +5,14 @@ document.getElementById("add-money-btn").addEventListener("click", function () {
     alert("please select a bank");
     return;
   }
+
   //2 - get bank account number
   const accno = getValueFromInput("add-money-number");
   if (accno.length != 11) {
     alert("invalid acc no");
     return;
   }
+  
   //3- get ammount
   const amount = getValueFromInput("add-money-amount");
   const currentBalance = getBalance();
